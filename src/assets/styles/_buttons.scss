@@ -1,0 +1,46 @@
+.button {
+  text-transform: lowercase;
+  font-weight: bold;
+  line-height: 1.5 * $line-height;
+  color: $brand-blue !important;
+  border-radius: $spacing/2;
+  border: 0.15rem solid $brand-blue;
+  display: inline-block;
+  transition: background-color 0.5s ease-in-out;
+  padding: 0 $spacing;
+
+  &:hover {
+    background-color: $brand-light-blue;
+    color: white !important;
+  }
+
+  &.is-secondary {
+    background-color: white;
+    border: 1px solid $blue;
+    // color: darken($blue, 30%) !important;
+    &:hover {
+      background-color: darken($blue, 20%);
+      color: white !important;
+    }
+  }
+
+   &.is-primary {
+     background-color: $orange;
+     &:hover {
+       background-color: darken($orange, 20%);
+     }
+   }
+
+   &.is-large {
+      line-height: 2 * $line-height;
+      padding: 0 $spacing * 1.5;
+      font-size: ms(1);
+   }
+
+   &.is-ghost {
+     background-color: white;
+     &:hover {
+       background-color: $orange;
+     }
+   }
+}

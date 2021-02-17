@@ -1,0 +1,56 @@
+$font-family-base: Arial;
+$font-size-root: 1rem;
+
+$modularscale: (
+  base: $font-size-root,
+  ratio: 1.2
+);
+
+$breakpoints: (
+  // phone: 600px,
+  tablet: 600px,
+  small: 900px,
+  medium: 1200px,
+  large: 1800px
+);
+
+@mixin mq($size) {
+  @media (min-width: map-get($breakpoints, $size)) { @content; }
+}
+
+$spacing: 1.5em;
+
+$line-height: 1.6;
+$line-height-tight: 1.2;
+
+$sidebar-width: 340px;
+$sidebar-max-width: 27.5%;
+
+$light-gray: #f8f8f8;
+$medium-gray: #dfdfe5;
+$new-gray: #afafbf;
+$gray: #85898E;
+$dark-gray: #444455;
+
+$black: #222;
+
+$brand-light-blue: #4265cb;
+$brand-blue: #21378b;
+$brand-peach: #ede1d9;
+$brand-pink: #dd5cb3;
+
+$blue: #aecdeb;
+$light-blue: #f0f6fc;
+$red: #df7839;
+$orange: #f4d582;
+$cream: #fef6dd;
+
+$text-color: $dark-gray;
+$bg-color: $brand-peach;
+
+$base-timing: ease;
+$base-duration: 500ms;
+
+$base-radius: 0.25rem;
+
+$box-shadow: 0 0.75em 1.2em -0.125em rgba($black, 0.5), 0 0px 0 1px rgba($black, 0.02);

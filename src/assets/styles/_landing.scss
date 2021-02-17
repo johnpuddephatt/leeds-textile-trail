@@ -1,0 +1,99 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__inner {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    max-width: map-get($breakpoints, 'large');
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media (orientation: portrait) {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text {
+    flex: 0 0 45%;
+  }
+
+  &__image {
+    flex: 0 0 calc(55% + #{5 * $spacing});
+    margin-left: -4 * $spacing;
+    margin-right: -$spacing;
+
+    @media (orientation: portrait) {
+      max-width: 70%;
+      margin: 0 0 $spacing
+
+    }
+  }
+
+  &__title {
+    font-size: ms(7);
+    margin-left: -.15em;
+
+    @include mq(tablet) {
+      font-size: ms(8);
+    }
+    @include mq(small) {
+      font-size: ms(9);
+    }
+    @include mq(medium) {
+      font-size: ms(10);
+    }
+
+  }
+
+  &__subtitle {
+    font-family: Cooper;
+    font-size: ms(2);
+    color: $brand-blue;
+    margin-bottom: $spacing;
+
+    &::before {
+      content: '';
+      height: 0.15rem;
+      width: 10em;
+      display: block;
+      background-color: $brand-light-blue;
+      border-radius: 9999px;
+      margin-top: $spacing;
+      margin-bottom: $spacing/2;
+    }
+  }
+
+  &__funders {
+    margin-top: -2 * $spacing;
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (orientation: portrait) {
+      flex: 0 0 auto;
+      width: 100%;
+      order: -9;
+    }
+
+    a {
+      display: inline-block;
+
+      + a {
+        margin-left: $spacing;
+      }
+    }
+
+    img {
+      height: 4em;
+      width: auto;
+    }
+  }
+}

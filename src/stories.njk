@@ -1,0 +1,14 @@
+---
+permalink: /api/stories.json
+---
+[
+  {% for story in collections.stories  %}
+    {% set data = story.data %}
+    {
+      "slug": "{{ data.name | slugify }}",
+      "name": "{{ data.name | safe }}",
+      "title": "{{ data.title | safe }}",
+      "location": {{ data.location | safe }}
+    }{{ '' if loop.last else ',' }}
+  {% endfor  %}
+]

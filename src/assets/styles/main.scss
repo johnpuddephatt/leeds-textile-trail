@@ -1,0 +1,22 @@
+@import 'normalize';
+@import 'base';
+@import 'buttons';
+@import 'landing';
+
+#app {
+  height: 100vh;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: map-get($breakpoints, 'small');
+  width: 100%;
+  padding: ms(2) ms(0);
+  margin: 0 auto;
+
+  @media screen and (orientation: landscape) and (min-width: 800px) {
+    padding: ms(4) ms(0);
+  }
+}

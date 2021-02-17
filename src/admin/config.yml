@@ -1,0 +1,4 @@
+# config.yml
+backend:
+  name: git-gateway
+collections:  
