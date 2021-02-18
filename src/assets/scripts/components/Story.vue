@@ -183,7 +183,7 @@ export default {
   }
 
   &--image {
-    margin: (-$spacing) (-1.5 * $spacing) 0;
+    margin: (-$spacing) (-1.5 * $spacing) (-$spacing/2);
     width: calc(100% + #{3 * $spacing});
     height: auto;
     max-width: none;
