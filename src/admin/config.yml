@@ -1,10 +1,9 @@
-# config.yml
 backend:
   name: git-gateway
 collections:
-  - name: 'stories'
-    label: 'Stories'
-    folder: 'src/stories'
+  - name: "stories"
+    label: "Stories"
+    folder: "src/stories"
     create: true
     editor:
       preview: false
@@ -18,7 +17,7 @@ collections:
         name: image
         widget: image
         required: false
-      - {label: 'Location', name: 'location', widget: 'map', default: '{'type':'Point','coordinates':[-1.5692493,53.8120951]}', required: false }
+      - {label: 'Location', name: 'location', widget: 'map', default: '{"type":"Point","coordinates":[-1.5692493,53.8120951]}', required: false }
       - {label: 'Location name', name: 'location_name', widget: 'string', hint: 'Provide a simple label of the location, e.g. Roundhay Park', required: false }
       - { label: 'Description', name: 'content', widget: 'markdown', required: false}
       - label: Photos
