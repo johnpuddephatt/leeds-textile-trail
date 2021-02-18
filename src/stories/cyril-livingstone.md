@@ -1,5 +1,5 @@
 ---
-active: false
+active: true
 name: Cyril Livingstone
 title: The Karl Lagerfeld of Leeds
 teaser: Get to know the fashionista who dressed Leeds’ finest

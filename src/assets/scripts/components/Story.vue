@@ -11,12 +11,14 @@
                 <img class="entry--image" width="1600" height="1179" :src="entry.image" @load="isImageLoaded = true" />
               </div>
             </transition>
+
+            <h2 class="entry--title">{{ entry.title }}</h2>
             <p class="entry--name">{{ entry.name }}</p>
             <div class="entry--meta">
               <a target="_blank" :href="googleMapsLink" v-if="entry.location && entry.location_name" class="entry--address">{{ entry.location_name }}</a>
               <button @click="scrollToGallery" v-if="entry.photos && entry.photos.length">{{entry.photos.length}} photos</button>
             </div>
-            <h2 class="entry--title">{{ entry.title }}</h2>
+
             <div class="entry--content" v-html="entry.content"></div>
 
             <gallery ref="gallery" id="photo-gallery" v-if="entry.photos && entry.photos.length" :photos="entry.photos"></gallery>
@@ -116,7 +118,7 @@ export default {
   right: 0;
   z-index: 9999999;
   background-color: white;
-  width: 55vw;
+  width: 65vw;
   max-width: map-get($breakpoints, 'small');
 
   @media screen and (orientation: portrait) {
@@ -125,7 +127,7 @@ export default {
 
   &--outer {
     position: relative;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.65);
     position: fixed;
     z-index: 99999;
     top: 0;
@@ -143,7 +145,7 @@ export default {
     margin: 0 auto;
     padding: 2 * $spacing $spacing 0;
     @media screen and (orientation: landscape) and (min-width: 800px) {
-      padding: 1px 2 * $spacing 0;
+      padding: 1px 4 * $spacing 0;
     }
   }
 
@@ -156,10 +158,8 @@ export default {
     @media screen and (orientation: portrait) {
       margin-top: $spacing;
     }
-  }
 
-  &--meta {
-    &::after {
+    &::before {
       content: '';
       height: 0.15rem;
       width: 24em;
@@ -167,9 +167,13 @@ export default {
       display: block;
       background-color: $brand-light-blue;
       border-radius: 9999px;
-      margin-top: $spacing/2;
-      margin-bottom: $spacing;
+      margin-top: $spacing;
+      margin-bottom: $spacing/2;
     }
+  }
+
+  &--meta {
+
   }
 
   &--title {
@@ -197,8 +201,8 @@ export default {
       content: '';
       display: inline-block;
       background-image: url(/assets/images/marker-icon-red.svg);
-      width: 1.25em;
-      height: 1.75em;
+      width: 1em;
+      height: 1.5em;
       margin-right: 0.25em;
       background-size: contain;
       background-repeat: no-repeat;
@@ -250,7 +254,7 @@ export default {
   &--back {
     position: absolute;
     top: $spacing;
-    left: 2 * $spacing;
+    left: 4 * $spacing;
     color: $gray;
     display: inline-block;
 
