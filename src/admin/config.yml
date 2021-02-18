@@ -1,5 +1,8 @@
 backend:
   name: git-gateway
+media_folder: '/src/uploads'
+public_folder: "/uploads"
+
 collections:
   - name: "stories"
     label: "Stories"
