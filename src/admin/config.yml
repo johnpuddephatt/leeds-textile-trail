@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
+  repo: johnpuddephatt/leeds-textile-trail
 media_folder: '/src/uploads'
 public_folder: "/uploads"
-
 collections:
   - name: "stories"
     label: "Stories"
