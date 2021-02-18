@@ -62,6 +62,8 @@ module.exports = function (config) {
     // Pass-through files
     config.addPassthroughCopy({'src/_compiled' : 'assets'})
     config.addPassthroughCopy('src/uploads')
+    config.addPassthroughCopy('src/admin')
+
 
     config.addPassthroughCopy('src/robots.txt')
     config.addPassthroughCopy('src/assets/images')
