@@ -60,7 +60,7 @@ module.exports = function (config) {
     // config.addLayoutAlias('vue', 'layouts/vue.njk');
 
     // Pass-through files
-    config.addPassthroughCopy('src/_assets')
+    config.addPassthroughCopy({'src/_compiled' : 'assets'})
     config.addPassthroughCopy('src/uploads')
 
     config.addPassthroughCopy('src/robots.txt')
