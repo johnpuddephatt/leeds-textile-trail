@@ -5,7 +5,7 @@
         <div v-else class="container" v-click-outside="goHome">
           <router-link class="entry--back" :to="{ name: 'app'}">&larr; Back to map</router-link>
           <div class="entry--panel">
-            <img v-if="!isImageLoaded && entry.image" src="/assets/placeholder.png" class="entry-image" width="1600" height="1179" />
+            <img v-if="!isImageLoaded && entry.image" src="/assets/images/placeholder.png" class="entry-image" width="1600" height="1179" />
             <transition name="fade" >
               <div v-show="isImageLoaded || !entry.image ">
                 <img class="entry--image" width="1600" height="1179" :src="entry.image" @load="isImageLoaded = true" />
