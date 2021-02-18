@@ -1,6 +1,8 @@
 ---
+active: true
 name: Isabella Ford
 title: Suffragette seamstresses strike
+teaser: Find out how Isabella led 200 women to stand up for fair pay
 image: /uploads/Isabella_Ford.png
 order: 10
 location: '{"type":"Point","coordinates":[-1.5632277,53.804659]}'

@@ -1,6 +1,8 @@
 ---
+active: false
 name: Cyril Livingstone
 title: The Karl Lagerfeld of Leeds
+teaser: Get to know the fashionista who dressed Leeds’ finest
 image: /uploads/Cyril_Livingstone.png
 order: 7
 location: '{"type":"Point","coordinates":[-1.5446993,53.797842]}'

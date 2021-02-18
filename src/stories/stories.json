@@ -1,4 +1,3 @@
 {
-  "layout": "story.njk",
-  "permalink": "/api/story/{{ name | slugify }}.json"
+  "permalink": false
 }

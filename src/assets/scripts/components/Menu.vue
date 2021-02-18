@@ -2,9 +2,16 @@
   <nav ref="nav" class="nav">
     <div class="nav--inner">
       <div class="nav--entry" :class="selectedEntrySlug == story.slug ? 'selected' : ''" v-for="story in stories" :key="story.slug" :ref="`menu-${story.slug}`" @click="menuClicked(story.slug)" @keyup.enter="menuClicked(story.slug)">
-          <h3 class="nav--entry--title" v-html="story.title"></h3>
           <div class="nav--entry--name" v-html="story.name"></div>
-          <router-link class="nav--entry--button button" tag="a" :to="{name: 'story', params: {slug: story.slug} }">Open</router-link>
+          <h3 class="nav--entry--title" v-html="story.title"></h3>
+          <router-link v-if="story.active" :aria-label="`Read the story about ${ story.name }`" class="nav--entry--enter" tag="a" :to="{name: 'story', params: {slug: story.slug } }">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </router-link>
+          <div class="nav--entry--soon" v-else>Coming soon</div>
+
+          <p class="nav--entry--description">{{ story.teaser }}</p>
       </div>
     </div>
   </nav>
@@ -44,8 +51,10 @@ export default {
 
 @import '../../styles/base.scss';
 
+$height: 1.5 * $spacing;
+
 .nav {
-  margin-top: -3.333 * $spacing;
+  margin-top: -($height + $spacing);
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
@@ -78,12 +87,12 @@ export default {
       display: block;
       content: '';
       flex: 0 0 calc(50vw - 18em/2);
-      transform: translateY($spacing * 2.333);
+      transform: translateY($height);
     }
   }
 
   &--entry {
-    transform: translateY($spacing * 2.333);
+    transform: translateY($height);
     cursor: pointer;
     flex: 0 0 18em;
     width: 18em;
@@ -94,59 +103,101 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     background-color: #fff;
-    border-right: 1px solid;
+    border-right: 2px solid;
     border-image: linear-gradient(#e7abfa, #4f67f3, #de5bb5, #edb772, #dd5cb3) 30;
-    padding: $spacing $spacing 0;
+    padding: $spacing/2 $spacing $spacing;
 
     @include mq('small') {
-      padding: $spacing 1.5 * $spacing;
+      padding: $spacing/2 1.5 * $spacing $spacing;
     }
 
     &:first-child {
-      border-left: 1px solid;
+      border-left: 2px solid;
     }
 
     &--title {
+      padding-right: $spacing/4;
       font-size: ms(1);
+      color: $dark-gray;
+      padding-top: $spacing/4;
+      margin-bottom: auto;
       line-height: $line-height-tight;
     }
 
     &--name {
       color: $gray;
-      opacity: 0;
-      transform: translateY(0.35em);
-      margin-top: auto;
-      padding-top: $spacing/4;
+
       transition: all 0.25s;
+      font-size: ms(-1);
     }
 
-    &--button {
-      margin-left: auto;
-      margin-top: $spacing/2;
+    &--enter {
+      display: block;
+      top: 0;
+      right: -$spacing/2;
+      transform: translateY(0.45em);
+      position: absolute;
+      border-radius: 9999px;
+      background-color: $brand-light-pink;
+      color: white;
+      height: 1.75 * $spacing;
+      width: 1.75 * $spacing;
+      opacity: 0;
+      color: white;
+      text-align: center;
+      padding: 0.5em;
+      transition: opacity 0.25s 0.25s, transform 0.25s 0.25s, background-color 0.25s;
+
+      @include mq('small') {
+        top: $spacing/2;
+      }
+
+      &:hover {
+        background-color: $brand-pink;
+      }
+    }
+
+    &--soon {
+      font-size: ms(-1);
+      display: block;
+      top: $spacing/4;
+      right: $spacing/2;
+      padding: 0 $spacing/2;
+      transform: translateY(0.45em);
+      position: absolute;
+      border-radius: 0.5em;
+      background-color: $light-gray;
+    }
+
+    &--description {
       opacity: 0;
       transform: translateY(0.35em);
       transition: all 0.25s;
+      font-size: ms(-1);
+      line-height: $line-height-tight;
+      margin-top: $spacing/2;
     }
 
     &::before {
       content: '';
       z-index: -1;
       position: absolute;
-      top: 0;
+      top: -$spacing/2;
       bottom: 0;
       background-color: white;
       opacity: 0;
-      border-left: 1px solid $new-gray;
-      border-right: 1px solid $new-gray;
+      border-left: 2px solid;
+      border-right: 2px solid;
       border-image: linear-gradient(#e7abfa, #4f67f3, #de5bb5, #edb772, #dd5cb3) 30;
       box-shadow: $box-shadow;
       transition: all 0.25s;
+      // left: -$spacing/2;
       left: -$spacing/2;
-      right: -$spacing/2;
+      right: -$spacing;
 
       @include mq('small') {
-        left: -$spacing;
-        right: -$spacing;
+        left: -$spacing/2;
+        right: -1.5 * $spacing;
       }
     }
 
@@ -158,8 +209,9 @@ export default {
         opacity: 1;
       }
 
-      .nav--entry--name,
-      .nav--entry--button {
+      .nav--entry--button,
+      .nav--entry--enter,
+      p {
         opacity: 1;
         transform: translateY(0);
       }

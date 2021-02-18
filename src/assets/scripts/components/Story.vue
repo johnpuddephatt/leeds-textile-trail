@@ -1,16 +1,31 @@
 <template>
-    <div class="entry-panel">
-      <div class="entry-panel--inner">
+    <div class="entry--outer">
+      <div ref="inner" class="entry">
         <loading v-if="!entryLoaded"></loading>
         <div v-else class="container" v-click-outside="goHome">
-          <router-link class="back-link" :to="{ name: 'app'}">&larr; Back to map</router-link>
-          <div class="panel">
-            <img width="1600" height="1179" class="entry-image" :src="entry.image" />
-            <h2 class="entry-title">{{ entry.title }}</h2>
-            <button @click="scrollToGallery" v-if="entry.photos && entry.photos.length">{{entry.photos.length}} photos</button>
-            <a target="_blank" :href="googleMapsLink" v-if="entry.location && entry.location_name" class="entry-address">{{ entry.location_name }}</a>
-            <div class="entry-content" v-html="entry.content"></div>
+          <router-link class="entry--back" :to="{ name: 'app'}">&larr; Back to map</router-link>
+          <div class="entry--panel">
+            <img v-if="!isImageLoaded && entry.image" src="/assets/placeholder.png" class="entry-image" width="1600" height="1179" />
+            <transition name="fade" >
+              <div v-show="isImageLoaded || !entry.image ">
+                <img class="entry--image" width="1600" height="1179" :src="entry.image" @load="isImageLoaded = true" />
+              </div>
+            </transition>
+            <p class="entry--name">{{ entry.name }}</p>
+            <div class="entry--meta">
+              <a target="_blank" :href="googleMapsLink" v-if="entry.location && entry.location_name" class="entry--address">{{ entry.location_name }}</a>
+              <button @click="scrollToGallery" v-if="entry.photos && entry.photos.length">{{entry.photos.length}} photos</button>
+            </div>
+            <h2 class="entry--title">{{ entry.title }}</h2>
+            <div class="entry--content" v-html="entry.content"></div>
+
             <gallery ref="gallery" id="photo-gallery" v-if="entry.photos && entry.photos.length" :photos="entry.photos"></gallery>
+
+            <div class="entry--navigation">
+              <router-link class="button entry--navigation--previous" v-if="entry.previous" aria-label="Read the previous story" tag="a" :to="{name: 'story', params: {slug: entry.previous } }">Previous story</router-link>
+              <router-link class="button entry--navigation--next" v-if="entry.next" aria-label="Read the next story" tag="a" :to="{name: 'story', params: {slug: entry.next } }">Next story</router-link>
+            </div>
+
           </div>
         </div>
 
@@ -42,6 +57,8 @@ export default {
   },
   watch: {
     slug: function (slug) {
+      this.isImageLoaded = false;
+      this.entryLoaded = false;
       this.getEntry(slug)
     }
   },
@@ -64,7 +81,8 @@ export default {
         .finally(() => {
           setTimeout(()=>{
             this.entryLoaded = true;
-          }, 1000);
+            this.$refs.inner.scrollTop = 0;
+          }, 500);
 
         })
     },
@@ -87,123 +105,117 @@ export default {
 <style lang="scss">
 @import '../../styles/base.scss';
 
-.entry-panel {
-  position: relative;
-  background-color: rgba(0,0,0,0.5);
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 
-  &--inner {
-    position: absolute;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+.entry {
+  position: absolute;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999999;
+  background-color: white;
+  width: 55vw;
+  max-width: map-get($breakpoints, 'small');
+
+  @media screen and (orientation: portrait) {
     width: 100%;
-    max-width: map-get($breakpoints, 'small');
-    z-index: 9999999;
-    background-color: white;
   }
 
-  // &::after {
-  //   z-index: 1;
-  //   background-color: rgba(0,0,0,0.5);
-  //   position: fixed;
-  //   z-index: 99999;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   content: '';
-  // }
+  &--outer {
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
-
-  @media screen and (orientation: landscape) and (min-width: 800px) {
-    padding: 0 $spacing;
+    @media screen and (orientation: landscape) and (min-width: 800px) {
+      padding: 0 $spacing;
+    }
   }
 
   .container {
     position: relative;
     margin: 0 auto;
-    padding: 0 $spacing;
+    padding: 2 * $spacing $spacing 0;
     @media screen and (orientation: landscape) and (min-width: 800px) {
-      padding: 0 2 * $spacing
+      padding: 1px 2 * $spacing 0;
     }
   }
 
-  .panel {
-  }
 
-  .panel-heading {
+  &--name {
+    font-family: Cooper;
     font-size: ms(2);
-    font-weight: 700;
+    margin-bottom: -$spacing/8;
+
+    @media screen and (orientation: portrait) {
+      margin-top: $spacing;
+    }
   }
 
-  .entry-title {
-    font-size: ms(3);
-    @media screen and (orientation: landscape) and (min-width: 800px) {
-      font-size: ms(5);
+  &--meta {
+    &::after {
+      content: '';
+      height: 0.15rem;
+      width: 24em;
+      max-width: 80%;
+      display: block;
+      background-color: $brand-light-blue;
+      border-radius: 9999px;
+      margin-top: $spacing/2;
+      margin-bottom: $spacing;
     }
+  }
+
+  &--title {
+    font-size: ms(6);
     font-weight: 700;
     margin-bottom: 0;
 
-    span {
-      @media screen and (orientation: landscape) and (min-width: 800px) {
-        display: inline-block;
-        margin-right: ms(1);
-      }
-    }
-
-    small {
-      font-weight: 400;
-      display: block;
-      color: $gray;
-      font-size: ms(2);
-      vertical-align: baseline;
-      @media screen and (orientation: landscape) and (min-width: 800px) {
-        display: inline-block;
-      }
+    @include mq(small) {
+      font-size: ms(8);
     }
   }
 
-  .entry-image {
-      margin: 0 (-1.5 * $spacing) $spacing;
-      width: calc(100% + #{3 * $spacing});
-      height: auto;
-      max-width: none;
+  &--image {
+    margin: (-$spacing) (-1.5 * $spacing) 0;
+    width: calc(100% + #{3 * $spacing});
+    height: auto;
+    max-width: none;
   }
 
-  .entry-address {
+  &--address {
     display: inline-block;
-    font-size: ms(0);
-    margin-top: ms(-4);
 
     &::before, &::after {
+      vertical-align: bottom;
       content: '';
       display: inline-block;
       background-image: url(/assets/images/marker-icon-red.svg);
-      width: 0.75em;
-      height: 1em;
-      margin-right: .25em;
+      width: 1.25em;
+      height: 1.75em;
+      margin-right: 0.25em;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: left bottom;
+      background-position: center;
     }
 
     &::after {
+      vertical-align: sub;
       background-image: url(/assets/images/external_link.svg);
+      width: 1em;
+      height: 1.25em;
       margin-left: 0.25em;
     }
   }
 
-  .entry-content {
-    margin-top: 2 * $spacing;
+  &--content {
+    margin-top: $spacing;
     margin-bottom: 2 * $spacing;
 
     p {
@@ -223,17 +235,29 @@ export default {
       }
     }
   }
-}
 
-.back-link {
-  position: absolute;
-  top: $spacing;
-  left: 2 * $spacing;
-  color: $gray;
-  display: inline-block;
+  &--navigation {
+    margin: $spacing 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 34em;
 
-  @media screen and (orientation: portrait) {
-    margin-bottom: ms(0);
+    &--next {
+      margin-left: auto;
+    }
+  }
+
+  &--back {
+    position: absolute;
+    top: $spacing;
+    left: 2 * $spacing;
+    color: $gray;
+    display: inline-block;
+
+    @media screen and (orientation: portrait) {
+      margin-bottom: ms(0);
+      left: $spacing;
+    }
   }
 }
 </style>

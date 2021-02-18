@@ -1,6 +1,9 @@
 ---
+active: true
 name: Asian Bazaar
 title: A little Leeds Batkhela
+teaser: Learn where you can find the finest fabrics right on your doorstep
+image: /uploads/Asian_Bazaar.png
 order: 12
 location: '{"type":"Point","coordinates":[-1.5369903479063822,53.79736304387904]}'
 location_name: "Leeds Kirkgate Market"

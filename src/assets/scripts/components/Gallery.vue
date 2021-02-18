@@ -1,13 +1,13 @@
 <template>
   <div class="gallery-wrapper" v-if="photos">
-
+    <h3 class="gallery-title">Gallery</h3>
     <div class="gallery-scroller">
       <div class="gallery-item" v-for="(photo, key) in photos" @click="open = key">
         <img :src="photo.file_small"/>
       </div>
     </div>
 
-    <transition name="fade">
+    <transition name="slide">
       <div class="lightbox" v-if="open !== null" @click.stop="open = null" @keydown.esc="open = null" >
         <div class="lightbox-image">
           <img :src="photos[open].file_large"/>
@@ -23,8 +23,8 @@
             </div>
           </div>
           <div class="lightbox-navigation">
-            <button v-if="photos.length > 1" class="button previous" :disabled="open == 0" @click.stop="open--">&larr;</button>
-            <button v-if="photos.length > 1" class="button next" :disabled="open == (photos.length - 1)"  @click.stop="open++">&rarr;</button>
+            <button v-if="photos.length > 1" class="button previous" aria-label="Previous photo" :disabled="open == 0" @click.stop="open--">&larr;</button>
+            <button v-if="photos.length > 1" class="button next" aria-label="Next photo" :disabled="open == (photos.length - 1)"  @click.stop="open++">&rarr;</button>
             <button class="button close" tabindex="1" @click="open = null">Close</button>
           </div>
         </div>
@@ -79,8 +79,14 @@ export default {
 <style lang="scss">
 @import '../../styles/base.scss';
 
+.gallery-title {
+  font-size: ms(3);
+  margin-bottom: $spacing/2;
+  margin-left: $spacing/2;
+}
+
 .gallery-wrapper {
-  margin: ms(-2) (-(ms(-2))) 0;
+  margin: 0 (-(ms(-2))) 2 * $spacing;
 
   &::after,
   &::before {
@@ -130,9 +136,11 @@ export default {
   overflow: hidden;
   border: solid ms(-2) transparent;
   background-clip: content-box;
+  padding-top: 75%;
 
   @media screen and (orientation: landscape) and (min-width: 800px) {
     flex: 0 0 30%;
+    padding-top: 27%;
     border: solid ms(0) transparent;
   }
 
@@ -141,6 +149,11 @@ export default {
   }
 
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -177,15 +190,18 @@ export default {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 55vw;
   max-width: map-get($breakpoints, 'small');
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (orientation: portrait) {
+    width: 100%;
+  }
 }
 
 .lightbox-image {
-  background-color: $gray;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -233,9 +249,11 @@ export default {
 
 .lightbox-navigation {
   display: flex;
+  gap: 12px;
+
   border-top: 1px solid $medium-gray;
   justify-content: space-between;
-  padding: ms(-2) ms(0) 0;
+  padding: ms(-2) ms(0);
   @media screen and (orientation:portrait) {
     justify-content: flex-start;
     padding: ms(-2) ms(0);

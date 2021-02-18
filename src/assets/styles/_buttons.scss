@@ -1,17 +1,22 @@
 .button {
   text-transform: lowercase;
   font-weight: bold;
-  line-height: 1.5 * $line-height;
-  color: $brand-blue !important;
+  line-height: 1.25 * $line-height;
+  color: $brand-light-blue !important;
   border-radius: $spacing/2;
-  border: 0.15rem solid $brand-blue;
+  border: 0.15rem solid $brand-light-blue;
   display: inline-block;
   transition: background-color 0.5s ease-in-out;
   padding: 0 $spacing;
 
   &:hover {
-    background-color: $brand-light-blue;
+    background-color: $brand-blue;
     color: white !important;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 
   &.is-secondary {

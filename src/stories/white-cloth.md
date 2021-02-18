@@ -1,6 +1,8 @@
 ---
+active: false
 name: First White Cloth Hall
 title: The medieval Blue Rinse
+teaser: Unearth the startling history of this unassuming spot
 order: 5
 location: '{"type":"Point","coordinates":[-1.5393581,53.7961496]}'
 location_name: "Kirkgate, Leeds"

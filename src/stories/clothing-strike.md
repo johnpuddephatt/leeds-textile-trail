@@ -1,6 +1,8 @@
 ---
+active: true
 name: 1970 Clothing Strike
 title: Leeds Lasses stick it to the man!
+teaser: Learn how 20,000 people in Leeds fought for equal pay
 image: /uploads/Protest_Women.png
 order: 6
 location: '{"type":"Point","coordinates":[-1.5834189,53.8054755]}'

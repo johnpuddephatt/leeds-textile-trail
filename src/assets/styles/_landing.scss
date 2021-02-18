@@ -21,16 +21,17 @@
 
   &__text {
     flex: 0 0 45%;
+    position: relative;
   }
 
   &__image {
-    flex: 0 0 calc(55% + #{5 * $spacing});
+    flex: 0 0 calc(55% + #{6 * $spacing});
     margin-left: -4 * $spacing;
-    margin-right: -$spacing;
+    margin-right: -2 * $spacing;
 
     @media (orientation: portrait) {
-      max-width: 70%;
-      margin: 0 0 $spacing
+      // max-width: 70%;
+      margin: 0 0 0;
 
     }
   }
@@ -53,7 +54,10 @@
 
   &__subtitle {
     font-family: Cooper;
-    font-size: ms(2);
+
+    @include mq(tablet) {
+      font-size: ms(2);
+    }
     color: $brand-blue;
     margin-bottom: $spacing;
 
@@ -70,6 +74,7 @@
   }
 
   &__funders {
+    position: relative;
     margin-top: -2 * $spacing;
     display: flex;
     flex: 0 0 100%;
@@ -78,6 +83,7 @@
     align-items: center;
 
     @media (orientation: portrait) {
+      margin-top: 3 * $spacing;
       flex: 0 0 auto;
       width: 100%;
       order: -9;
@@ -92,7 +98,7 @@
     }
 
     img {
-      height: 4em;
+      max-height: 4em;
       width: auto;
     }
   }

@@ -7,8 +7,10 @@ permalink: /api/stories.json
     {
       "slug": "{{ data.name | slugify }}",
       "name": "{{ data.name | safe }}",
+      "teaser": "{{ data.teaser | safe }}",
       "title": "{{ data.title | safe }}",
-      "location": {{ data.location | safe }}
+      "location": {{ data.location | safe }},
+      "active": {{ data.active  }}
     }{{ '' if loop.last else ',' }}
   {% endfor  %}
 ]

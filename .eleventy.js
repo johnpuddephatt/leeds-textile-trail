@@ -1,5 +1,5 @@
 const markdownIt = require('markdown-it')
-const pluginSrcsetImg = require('eleventy-plugin-srcset')
+const pluginSrcsetImg = require('./.eleventy.srcset.js')
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')

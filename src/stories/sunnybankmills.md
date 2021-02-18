@@ -1,6 +1,8 @@
 ---
+active: true
 name: Sunny Bank Mills
 title: The home of fashion past and present
+teaser: Visit the home of some of the finest cloth in the world
 image: /uploads/Sunny_Bank_Mills.png
 order: 3
 location: '{"type":"Point","coordinates":[-1.6746407,53.8141497]}'

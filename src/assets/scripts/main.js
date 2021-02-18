@@ -31,28 +31,14 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes, // short for `routes: routes`
-  scrollBehavior: function (to) {
-    if (to.hash) {
-      return {
-        selector: to.hash
-      }
-    }
-  },
+  routes // short for `routes: routes`
 })
 
 Vue.use(VueGtag, {
-  config: { id: 'UA-48108307-2' },
+  config: { id: 'G-W89KJ1R0MM' },
   disableScriptLoad: true
 }, router)
 
 const app = new Vue({
   router
 }).$mount('#app')
-//
-// const app = new Vue({
-//   router,
-//   render: (h) => {
-//     return h();
-//   },
-// }).$mount('#app');

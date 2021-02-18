@@ -1,6 +1,9 @@
 ---
+active: true
 name: Richard Oastler
 title: The fight for the ten hour day
+teaser: Read about the preacher who started a movement
+image: /uploads/Richard_Oastler.png
 order: 3
 location: '{"type":"Point","coordinates":[-1.5990249,53.8179641]}'
 location_name: 'Buried at St Stephen’s Church, Kirkstall'
