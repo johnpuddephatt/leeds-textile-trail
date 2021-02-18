@@ -16,7 +16,7 @@
       <l-marker :ref="`marker-${story.slug}`" v-for="story in stories" :key="story.slug" :lat-lng="getLatLng(story)" @click="markerClicked(story.slug)" @keyup.enter="markerClicked(story.slug)" >
         <l-icon
           :iconSize="selectedEntrySlug == story.slug ? [53,80] : [35,53]"
-          icon-url="/assets/images/marker-icon-red.svg"
+          icon-url="/assets/images/marker-icon.svg"
         />
       </l-marker>
   </l-map>

@@ -118,8 +118,8 @@ export default {
   right: 0;
   z-index: 9999999;
   background-color: white;
-  width: 65vw;
-  max-width: map-get($breakpoints, 'small');
+  width: 70vw;
+  max-width: calc(#{map-get($breakpoints, 'small')} + #{$spacing}) ;
 
   @media screen and (orientation: portrait) {
     width: 100%;
@@ -127,7 +127,7 @@ export default {
 
   &--outer {
     position: relative;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(15,25,70,0.7);
     position: fixed;
     z-index: 99999;
     top: 0;
@@ -145,7 +145,7 @@ export default {
     margin: 0 auto;
     padding: 2 * $spacing $spacing 0;
     @media screen and (orientation: landscape) and (min-width: 800px) {
-      padding: 1px 4 * $spacing 0;
+      padding: 1px 4 * $spacing 0 6 * $spacing;
     }
   }
 
@@ -153,7 +153,7 @@ export default {
   &--name {
     font-family: Cooper;
     font-size: ms(2);
-    margin-bottom: -$spacing/8;
+    margin-bottom: 0;
 
     @media screen and (orientation: portrait) {
       margin-top: $spacing;
