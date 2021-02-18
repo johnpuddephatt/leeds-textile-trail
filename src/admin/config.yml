@@ -2,30 +2,30 @@
 backend:
   name: git-gateway
 collections:
-  - name: 'stories'
-    label: 'Stories'
-    folder: 'src/stories'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - {label: 'Order', name: 'order', widget: 'number', hint: 'Lower numbers will be shown earlier in the menu.', required: false }
-      - {label: 'Name', name: 'name', widget: 'string' }
-      - {label: 'Title', name: 'title', widget: 'string' }
-      - {label: 'Teaser', name: 'teaser', widget: 'text' }
-      - {label: 'Active?', name: 'active', widget: 'boolean', default: true}
-      - label: Image
-        name: image
-        widget: image
-        required: false
-      - {label: 'Location', name: 'location', widget: 'map', default: '{'type':'Point','coordinates':[-1.5692493,53.8120951]}', required: false }
-      - {label: 'Location name', name: 'location_name', widget: 'string', hint: 'Provide a simple label of the location, e.g. Roundhay Park', required: false }
-      - { label: 'Description', name: 'content', widget: 'markdown', required: false}
-      - label: Photos
-        name: photos
-        widget: list
-        fields:
-          - { label: 'Image', name: 'file', widget: 'image', required: false}
-          - {label: 'Caption', name: 'caption', widget: 'string', required: false }
-          - {label: 'Date', name: 'date', widget: 'string', required: false }
-          - {label: 'Source', name: 'source', widget: 'string', required: false }
+- name: 'stories'
+  label: 'Stories'
+  folder: 'src/stories'
+  create: true
+  editor:
+    preview: false
+  fields:
+    - {label: 'Order', name: 'order', widget: 'number', hint: 'Lower numbers will be shown earlier in the menu.', required: false }
+    - {label: 'Name', name: 'name', widget: 'string' }
+    - {label: 'Title', name: 'title', widget: 'string' }
+    - {label: 'Teaser', name: 'teaser', widget: 'text' }
+    - {label: 'Active?', name: 'active', widget: 'boolean', default: true}
+    - label: Image
+      name: image
+      widget: image
+      required: false
+    - {label: 'Location', name: 'location', widget: 'map', default: '{'type':'Point','coordinates':[-1.5692493,53.8120951]}', required: false }
+    - {label: 'Location name', name: 'location_name', widget: 'string', hint: 'Provide a simple label of the location, e.g. Roundhay Park', required: false }
+    - { label: 'Description', name: 'content', widget: 'markdown', required: false}
+    - label: Photos
+      name: photos
+      widget: list
+      fields:
+        - { label: 'Image', name: 'file', widget: 'image', required: false}
+        - {label: 'Caption', name: 'caption', widget: 'string', required: false }
+        - {label: 'Date', name: 'date', widget: 'string', required: false }
+        - {label: 'Source', name: 'source', widget: 'string', required: false }
