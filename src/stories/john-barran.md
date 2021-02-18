@@ -1,8 +1,9 @@
 ---
-active: false
+active: true
 name: John Barran
 title: The birth of ‘fast’ fashion
 teaser: Uncover the history of one of Leeds’ most characterful buildings
+image: /uploads/John_Barran.png
 order: 9
 location: '{"type":"Point","coordinates":[-1.5582418,53.801834]}'
 location_name: Chorley Lane
