@@ -1,8 +1,9 @@
 ---
-active: false
+active: true
 name: Temple Works
 title: A mill that thinks it’s an Egyptian Temple
 teaser: Step inside the room that was once the largest in the world
+image: /uploads/Temple_Mill.png
 order: 4
 location: '{"type":"Point","coordinates":[-1.5549627,53.790103]}'
 location_name: 'Marshall Street, Holbeck'
