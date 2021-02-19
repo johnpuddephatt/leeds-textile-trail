@@ -191,6 +191,10 @@ export default {
     width: calc(100% + #{3 * $spacing});
     height: auto;
     max-width: none;
+
+    @media screen and (orientation: portrait) {
+      margin-bottom: $spacing/2;
+    }
   }
 
   &--address {
