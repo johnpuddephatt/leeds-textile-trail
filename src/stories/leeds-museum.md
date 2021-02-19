@@ -3,6 +3,7 @@ active: true
 name: Leeds Museums
 title: In fashion – here today, archived tomorrow?
 teaser: Explore Leeds’ textile past, documented in stunning detail
+image: '/uploads/Museum.png'
 order: 11
 location: '{"type":"Point","coordinates":[-1.5487186,53.7887025]}'
 location_name: Discovery Centre, Carlisle Road
