@@ -1,5 +1,5 @@
 ---
-active: false
+active: true
 name: Leeds Museums
 title: In fashion – here today, archived tomorrow?
 teaser: Explore Leeds’ textile past, documented in stunning detail

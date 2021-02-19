@@ -1,5 +1,5 @@
 ---
-active: false
+active: true
 name: First White Cloth Hall
 title: The medieval Blue Rinse
 teaser: Unearth the startling history of this unassuming spot
