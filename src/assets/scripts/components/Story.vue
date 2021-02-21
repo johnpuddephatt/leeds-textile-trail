@@ -187,13 +187,13 @@ export default {
   }
 
   &--image {
-    margin: (-$spacing) (-1.5 * $spacing) (-$spacing/2);
+    margin: (0) (-1.5 * $spacing) (-$spacing/2);
     width: calc(100% + #{3 * $spacing});
     height: auto;
     max-width: none;
 
     @media screen and (orientation: portrait) {
-      margin-bottom: $spacing/2;
+      margin: (-$spacing) (-1.5 * $spacing) $spacing/2;
     }
   }
 
@@ -241,6 +241,29 @@ export default {
         font-weight: 400;
         font-size: ms(0);
       }
+    }
+
+    h3 {
+      font-size: ms(2);
+      margin-top: 2 * $spacing;
+      margin-bottom: -$spacing/2;
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: transparentize($brand-light-blue, 0.5);
+     }
+
+    figure {
+      margin: 2 * $spacing 0;
+    }
+
+    figcaption {
+      font-size: ms(-1);
+      color: $gray;
+      margin: $spacing/2 2 * $spacing 0;
+      text-align: center;
     }
   }
 

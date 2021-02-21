@@ -21,8 +21,7 @@ pagination:
           {% if photo.caption %}"caption" : "{{ photo.caption | striptags | safe }}",{% endif %}
           {% if photo.date %}"date" : "{{ photo.date | striptags | safe }}",{% endif %}
           {% if photo.source %}"source" : "{{ photo.source | striptags | safe }}",{% endif %}
-          "file_small": "{{ photo.file | replace('/image/upload/', '/image/upload/w_300,h_300,c_fill,q_65,f_auto/') | safe}}",
-          "file_large": "{{ photo.file | replace('/image/upload/', '/image/upload/w_900,h_900,c_fit,q_85,f_auto/') | safe}}"
+          "file": "{{ photo.file | safe}}"
         }{% if loop.last %}{% else %},{% endif %}
       {% endif %}
     {% endfor %}

@@ -3,14 +3,14 @@
     <h3 class="gallery-title">Gallery</h3>
     <div class="gallery-scroller">
       <div class="gallery-item" v-for="(photo, key) in photos" @click="open = key">
-        <img :src="photo.file_small"/>
+        <img :src="photo.file"/>
       </div>
     </div>
 
     <transition name="slide">
       <div class="lightbox" v-if="open !== null" @click.stop="open = null" @keydown.esc="open = null" >
         <div class="lightbox-image">
-          <img :src="photos[open].file_large"/>
+          <img :src="photos[open].file"/>
         </div>
 
         <div class="lightbox-text">

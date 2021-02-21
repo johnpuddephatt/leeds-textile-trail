@@ -12,4 +12,6 @@ In October 1888, 200 female weavers at Wilson and Sons went on strike in protest
 
 The strike prompted Isabella to reignite the organisation of tailoresses in the city and the Tailoresses Union flourished with her support.  In 1896 she was elected as a delegate to the Trade Union National Congress and was one of the few who dared to raise the issue of  sexual harassment at work.
 
+![](/uploads/Isabella-Ford_1924.jpg "Portrait photo of Isabella Ford")
+
 In 1904 the Independent Labour Party, of which she was a member, published her influential pamphlet, Women and Socialism.  She argued that women should have the vote not only because of the political power it would give them but also because it would change the relationship between men and women.  She spent the final years of her life campaigning for peace, disarmament and international cooperation.  She sought the creation of a new world where women and men would realise their full potential as human beings and live in harmony with each other and their environment.
