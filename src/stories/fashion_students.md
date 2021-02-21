@@ -4,7 +4,7 @@ name: Leeds Fashion Students
 title: Present day designers and creators
 teaser: Meet the students continuing Leeds textile traditions.
 image: '/uploads/Fashion_Student.png'
-order: 12
+order: 9
 location: '{"type":"Point","coordinates":[-1.5487186,53.7887025]}'
 location_name: Leeds Arts University and other HE institutions
 ---
