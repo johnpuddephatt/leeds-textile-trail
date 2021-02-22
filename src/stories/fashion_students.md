@@ -5,12 +5,12 @@ title: Present day designers and creators
 teaser: Meet the students continuing Leeds textile traditions.
 active: true
 image: /uploads/Fashion_Student.png
-location: '{"type":"Point","coordinates":[-1.5487186,53.7887025]}'
+location: '{"type":"Point","coordinates":[-1.5517111,53.808826]}'
 location_name: Leeds Arts University and other HE institutions
 ---
 ### Joanne Boulter
 
-**BA (Hons) Fashion Design, University of Leeds (current student)** 
+**BA (Hons) Fashion Design, University of Leeds (current student)**
 
 **Motivation.** The initial motivation for the zero-waste work was the recognition that designers need to reflect more on the impact that their decision making can have on the environment. Experimenting with low waste and zero waste design techniques was a way to discover how a designer can actively reduce pre consumer waste and the amount of fabric that gets discarded during the production of clothing.
 

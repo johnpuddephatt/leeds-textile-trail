@@ -5,7 +5,7 @@ title: The home of fashion past and present
 teaser: Visit the home of some of the finest cloth in the world
 active: true
 image: /uploads/Sunny_Bank_Mills.png
-location: '{"type":"Point","coordinates":[-1.6746407,53.8141497]}'
+location: '{"type":"Point","coordinates":[-1.670607,53.814286]}'
 location_name: Farsley, Leeds
 ---
 Sunny Bank Mills is a living demonstration that the skills of the past can help to build a more sustainable future.

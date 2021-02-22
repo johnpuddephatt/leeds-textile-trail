@@ -5,7 +5,7 @@ title: The man who dressed the nation
 teaser: Meet an entrepreneur who changed his name and the way we dress.
 image: /uploads/Soldier_Boy.png
 order: 2
-location: '{"type":"Point","coordinates":[-1.5553272,53.7779033]}'
+location: '{"type":"Point","coordinates":[-1.510410,53.805808]}'
 location_name: "Hudson Road factory, LS9 6EB"
 ---
 Burton’s mission was to make good quality, affordable suits for everyday men. Arriving in the UK from Lithuania aged only 15, Meshe Osinksy - as he was then known - was a pioneer of manufacturing and high street retailing.
