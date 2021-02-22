@@ -49,6 +49,10 @@ Alena is a fashion designer with more than twenty years of experience of studyin
 Of her work Alena says, “During the ten years I worked in fast fashion I was often sent to India, Turkey and Uzbekistan where I saw first–hand how fast fashion exploits people in developing countries, when I eventually left the industry to raise my family and develop my own collections, I resolved only to use the most ethical sources”.
 
 These days Alena makes garments that are designed to be cherished and passed down, an antidote to the unsustainable fast fashion she witnessed first–hand. These garments use the most ethical and sustainable raw materials possible, even the wool comes from a source in Slovakia who does not farm sheep for meat, but keeps them for grazing land and for wool. This became more and more important to her during her MA at Leeds Arts University as she learned about the mistreatment of animals in the wool trade.
+
+![](/uploads/alena-2.jpg)
+
+
 Alena is also collating her own knitting patterns and considering publishing a pattern book that will also emphasise the importance of keeping dying craft skills alive and documented for the future.
 
 Email [achalmovska@hotmail.com](mailto:achalmovska@hotmail.com). Instagram [@spun_kids](https://omstagram.com/spun_kids)
