@@ -1,14 +1,16 @@
 ---
-active: true
+order: 9
 name: Leeds Fashion Students
 title: Present day designers and creators
 teaser: Meet the students continuing Leeds textile traditions.
-image: '/uploads/Fashion_Student.png'
-order: 9
+active: true
+image: /uploads/Fashion_Student.png
 location: '{"type":"Point","coordinates":[-1.5487186,53.7887025]}'
 location_name: Leeds Arts University and other HE institutions
 ---
 ### Joanne Boulter
+
+**BA (Hons) Fashion Design, University of Leeds (current student)** 
 
 **Motivation.** The initial motivation for the zero-waste work was the recognition that designers need to reflect more on the impact that their decision making can have on the environment. Experimenting with low waste and zero waste design techniques was a way to discover how a designer can actively reduce pre consumer waste and the amount of fabric that gets discarded during the production of clothing.
 
@@ -44,7 +46,6 @@ These days Alena makes garments that are designed to be cherished and passed dow
 Alena is also collating her own knitting patterns and considering publishing a pattern book that will also emphasise the importance of keeping dying craft skills alive and documented for the future.
 
 Email [achalmovska@hotmail.com](mailto:achalmovska@hotmail.com). Instagram [@spun_kids](https://omstagram.com/spun_kids)
-
 
 ### Lorna Jewitt
 
