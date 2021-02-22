@@ -28,6 +28,8 @@ location_name: Leeds Arts University and other HE institutions
 
 Dominic Browning is a sustainable textile artist who works with second–hand clothes and forgotten fabrics. Dominic creates his recycled material through utilising wrong sides, right sides, seams and holes of rescued knitwear and other disposed of garments, combining them to create his sustainable artwork. His work is about celebrating the history of all the recycled garments involved and their newly founded future.
 
+![](/uploads/dom-2.jpg)
+
 Dominic studied Fashion at Leeds Beckett University where he graduated with first–class honours. He dedicated his last year of studies to sustainable textiles where he created a 6 outfit collection made completely from rescued fabrics. Since graduating, Dominic has continued to advocate for sustainability in and around Leeds. He has completed and sold commissions and artwork, and also taken part in talks, presentations and news segments.
 
 He believes his work to be a conversation starter, catalysing people to question their own emotional attachments with certain pieces of clothing but also intrigue people into asking when viewing his work ‘Who originally owned this piece of recycled cloth?” or “Who will own this piece in the future?”, opening up for the topic of landfill, unnecessary disposal and the importance of emotional relationships with clothing to be discussed.
