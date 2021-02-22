@@ -14,6 +14,6 @@ Makers and tailors can take advantage of the beautiful fabrics on offer and make
 
 Even if its typical Yorkshire weather, a morning here and your senses are transported to the bustling streets of India or Pakistan.
 
-The Asian Bazaar is normally held at Leeds Kirkgate Market every Wednesday from 10.30 to 5pm.  (It is on hold due to current Covid restrictions.) 
+The Asian Bazaar is normally held at Leeds Kirkgate Market every Wednesday from 10.30 to 5pm (on hold for now due to current Covid restrictions). 
 
 Asian Bazaar, [Leeds Kirkgate Market](https://www.leeds.gov.uk/leedsmarkets/specialist-markets)
