@@ -14,6 +14,6 @@ Founded in 1829 by a group of local clothiers, including John Gaunt, ancestor to
 
 ![](/uploads/SunnyBankMillsGallery.jpg "Today Sunny Bank Mills is home to over 75 creative businesses")
 
-The Archive aims to be accessible to all, sharing the objects and the stories of the people that worked here.  With the/thousands of wool cloth samples, mill objects and stories, the Archive is helping to inform future generations about the beauty of textiles and is an antidote to the waste of fast fashion. The vast knowledge and experience of this textile heritage is finding a new future in the creative businesses at Sunny Bank Mills, such as School of Sew and Scrap Centre of Creative Reuse.
+The Archive aims to be accessible to all, sharing the objects and the stories of the people that worked here.  With thousands of wool cloth samples, mill objects and stories, the Archive is helping to inform future generations about the beauty of textiles and is an antidote to the waste of fast fashion. The vast knowledge and experience of this textile heritage is finding a new future in the creative businesses at Sunny Bank Mills, such as School of Sew and Scrap Centre of Creative Reuse.
 
 ![](/uploads/SunnyBankMillshistoricalwatercolour.jpg "Historical watercolour of Sunny Bank Mills")
