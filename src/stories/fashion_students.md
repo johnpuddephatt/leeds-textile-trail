@@ -55,7 +55,7 @@ These days Alena makes garments that are designed to be cherished and passed dow
 
 Alena is also collating her own knitting patterns and considering publishing a pattern book that will also emphasise the importance of keeping dying craft skills alive and documented for the future.
 
-Email [achalmovska@hotmail.com](mailto:achalmovska@hotmail.com). Instagram [@spun_kids](https://omstagram.com/spun_kids)
+Email [achalmovska@hotmail.com](mailto:achalmovska@hotmail.com). Instagram [@spun_kids](https://www.instagram.com/spun_kids/)
 
 ### Lorna Jewitt
 
