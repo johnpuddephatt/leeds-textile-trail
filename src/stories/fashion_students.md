@@ -44,7 +44,7 @@ Dominic’s work is available to view at Leeds Beckett University and on his Ins
 
 Alena is a fashion designer with more than twenty years of experience of studying and working in the fashion and textiles industry. As a native of the Slovak Republic, she is interested in fusing traditional techniques from her heritage with modern, ethical, sustainable and gender–neutral children’s wear. She produces entirely hand spun and hand knitted garments that explore traditional stitching techniques used in Slovak Kroj (a traditional costume in Slovak heritage).
 
-![](/uploads/alena-4-to-use.jpg)
+![](/uploads/alena-3.jpg)
 
 Of her work Alena says, “During the ten years I worked in fast fashion I was often sent to India, Turkey and Uzbekistan where I saw first–hand how fast fashion exploits people in developing countries, when I eventually left the industry to raise my family and develop my own collections, I resolved only to use the most ethical sources”.
 
