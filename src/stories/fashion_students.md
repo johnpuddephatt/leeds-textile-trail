@@ -8,9 +8,9 @@ image: /uploads/Fashion_Student.png
 location: '{"type":"Point","coordinates":[-1.5487186,53.7887025]}'
 location_name: Leeds Arts University and other HE institutions
 ---
-### Come to Leeds to learn about fashion and textiles!   
+### Come to Leeds to learn about fashion and textiles!
 
-The city has 17 higher education courses in the subject across four of its Universities and Colleges - University of Leeds, Leeds Arts University, Leeds Beckett University and Leeds City College - University Centre.  And later this year the University of Leeds launches it's first sustainable fashion degree! Here's a taste of just some of the amazing students/designers educated in Leeds. 
+The city has 17 higher education courses in the subject across four of its Universities and Colleges - University of Leeds, Leeds Arts University, Leeds Beckett University and Leeds City College - University Centre.  And later this year the University of Leeds launches it's first sustainable fashion degree! Here's a taste of just some of the amazing students/designers educated in Leeds - all with an eye on sustainability. 
 
 ### Joanne Boulter
 
