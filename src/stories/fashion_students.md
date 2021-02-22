@@ -8,6 +8,10 @@ image: /uploads/Fashion_Student.png
 location: '{"type":"Point","coordinates":[-1.5487186,53.7887025]}'
 location_name: Leeds Arts University and other HE institutions
 ---
+### Come to Leeds to learn about fashion and textiles!   
+
+The city has 17 higher education courses in the subject across four of its Universities and Colleges - University of Leeds, Leeds Arts University, Leeds Beckett University and Leeds City College - University Centre.  And later this year the University of Leeds launches it's first sustainable fashion degree! Here's a taste of just some of the amazing students/designers educated in Leeds. 
+
 ### Joanne Boulter
 
 **BA (Hons) Fashion Design, University of Leeds (current student)** 
@@ -51,7 +55,6 @@ Of her work Alena says, “During the ten years I worked in fast fashion I was o
 These days Alena makes garments that are designed to be cherished and passed down, an antidote to the unsustainable fast fashion she witnessed first–hand. These garments use the most ethical and sustainable raw materials possible, even the wool comes from a source in Slovakia who does not farm sheep for meat, but keeps them for grazing land and for wool. This became more and more important to her during her MA at Leeds Arts University as she learned about the mistreatment of animals in the wool trade.
 
 ![](/uploads/alena-2-use.jpg)
-
 
 Alena is also collating her own knitting patterns and considering publishing a pattern book that will also emphasise the importance of keeping dying craft skills alive and documented for the future.
 
