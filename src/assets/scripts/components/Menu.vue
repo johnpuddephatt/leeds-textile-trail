@@ -5,9 +5,7 @@
           <div class="nav--entry--name" v-html="story.name"></div>
           <h3 class="nav--entry--title" v-html="story.title"></h3>
           <router-link v-if="story.active" :aria-label="`Read the story about ${ story.name }`" class="nav--entry--enter" tag="a" :to="{name: 'story', params: {slug: story.slug } }">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
+            View
           </router-link>
           <div class="nav--entry--soon" v-else>Coming soon</div>
 
@@ -139,17 +137,14 @@ $height: 1.5 * $spacing;
       position: absolute;
       border-radius: 9999px;
       background-color: $brand-light-pink;
-      color: white;
-      height: 1.75 * $spacing;
-      width: 1.75 * $spacing;
+      color: $brand-blue;
       opacity: 0;
-      color: white;
       text-align: center;
-      padding: 0.5em;
+      padding: 0.25em 0.75em;
       transition: opacity 0.25s 0.25s, transform 0.25s 0.25s, background-color 0.25s;
 
       @include mq('small') {
-        top: $spacing/2;
+        top: $spacing/4;
       }
 
       &:hover {
