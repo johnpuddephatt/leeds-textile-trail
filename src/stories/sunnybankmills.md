@@ -18,7 +18,7 @@ Today the site is being sustainably regenerated, recycling and reusing existing 
 
 The Archive aims to be accessible to all, sharing the objects and the stories of the people that worked here.  With thousands of wool cloth samples, mill objects and stories, the Archive is helping to inform future generations about the beauty of textiles and is an antidote to the waste of fast fashion. 
 
-![](/uploads/the-archive-room-1-.jpg)
+![](/uploads/the-archive-room-1-.jpg "The Archive with thousands of wool cloth samples, mill objects and stories. ")
 
 The vast knowledge and experience of this textile heritage is finding a new future in the creative businesses at Sunny Bank Mills, such as School of Sew and Scrap Centre of Creative Reuse.
 
