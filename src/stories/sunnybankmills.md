@@ -8,10 +8,12 @@ image: /uploads/Sunny_Bank_Mills.png
 location: '{"type":"Point","coordinates":[-1.670607,53.814286]}'
 location_name: Farsley, Leeds
 ---
-Sunny Bank Mills is a living demonstration that the skills of the past can help to build a more sustainable future.
+[Sunny Bank Mills](https://www.sunnybankmills.co.uk/) is a living demonstration that the skills of the past can help to build a more sustainable future.
 
-Founded in 1829 by a group of local clothiers, including John Gaunt, ancestor to the current owners, the mill went on to create fine worsted suiting cloth destined for Savile Row in London and it exported around the world. Sunny Bank Mills continued to produce the world’s finest cloth until 2008, when production ceased, after 180 years.\
-Today the site is being sustainably regenerated, recycling and reusing existing materials and investing in energy technology to reduce its environmental impact. It is now home to over 75 creative businesses including a gallery, art studios and an Archive.
+[Founded in 1829](https://www.sunnybankmills.co.uk/our-story/) by a group of local clothiers, including John Gaunt, ancestor to the current owners, the mill went on to create fine worsted suiting cloth destined for Savile Row in London and it exported around the world. Sunny Bank Mills continued to produce the world’s finest cloth until 2008, when production ceased, after 180 years.\
+[Today the site is being sustainably regenerated](https://www.sunnybankmills.co.uk/arts/), recycling and reusing existing materials and investing in energy technology to reduce its environmental impact. It is now home to over 75 creative businesses including a gallery, art studios and an Archive.
+
+You can watch a [\#LeedsFashionFutures](https://www.zerowasteleeds.org.uk/projects/leeds-fashion-futures/) conversation with Sunny Bank Mills archivist Rachel Moaby [here](https://www.youtube.com/watch?v=WzX0LfmBdx0&list=PLcImqkHEpk0rU47yBbwR3NV_jEgmrJ5rX&index=17).  
 
 ![](/uploads/SunnyBankMillsGallery.jpg "Today Sunny Bank Mills is home to over 75 creative businesses")
 
