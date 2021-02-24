@@ -11,7 +11,6 @@ location_name: Farsley, Leeds
 Sunny Bank Mills is a living demonstration that the skills of the past can help to build a more sustainable future.
 
 Founded in 1829 by a group of local clothiers, including John Gaunt, ancestor to the current owners, the mill went on to create fine worsted suiting cloth destined for Savile Row in London and it exported around the world. Sunny Bank Mills continued to produce the world’s finest cloth until 2008, when production ceased, after 180 years.\
-\
 Today the site is being sustainably regenerated, recycling and reusing existing materials and investing in energy technology to reduce its environmental impact. It is now home to over 75 creative businesses including a gallery, art studios and an Archive.
 
 ![](/uploads/SunnyBankMillsGallery.jpg "Today Sunny Bank Mills is home to over 75 creative businesses")
