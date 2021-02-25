@@ -56,10 +56,16 @@
     font-family: Cooper;
 
     @include mq(tablet) {
-      font-size: ms(2);
+      font-size: ms(1);
     }
     color: $brand-blue;
     margin-bottom: $spacing;
+
+    a {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: transparentize($brand-blue, 0.75);
+    }
 
     &::before {
       content: '';
