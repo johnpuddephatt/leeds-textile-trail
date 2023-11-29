@@ -47,7 +47,7 @@ export default {
       zoom: 13,
       center: latLng(53.7988737,-1.59013),
       url: 'https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg',
-      url2: 'https://stamen-tiles.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.png',
+      url2: 'https://tiles.stadiamaps.com/tiles/stamen_toner_labels/{z}/{x}/{y}{r}.png',
       
 
     	maxZoom: 16,
