@@ -46,8 +46,10 @@ export default {
     return {
       zoom: 13,
       center: latLng(53.7988737,-1.59013),
-      url: 'https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
+      url: 'https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg',
       url2: 'https://stamen-tiles.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.png',
+      
+
     	maxZoom: 16,
     	attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA.',
       mapOptions: {
